@@ -76,20 +76,15 @@ const GetStartedModal = ({ isOpen, onClose }: Props) => {
     }
 
     if (!isValidEmail(email)) {
-      setError(
-        "Email must be in English and use a common domain like @gmail.com, @outlook.com, etc."
-      );
+      setError("Email must be in English and use a common domain like @gmail.com, @outlook.com, etc.");
       return;
     }
 
     if (!isValidPhoneNumber(phone)) {
-      setError(
-        "Phone number must be in international format, starting with '+' and followed by 8 to 15 digits."
-      );
+      setError("Phone number must be in international format, starting with '+' and followed by 8 to 15 digits.");
       return;
     }
 
-    // Valid submission
     console.log("Submitting:", { name, email, phone });
 
     setName("");
@@ -101,7 +96,7 @@ const GetStartedModal = ({ isOpen, onClose }: Props) => {
 
   return (
     <div className="fixed top-1/2 left-1/2 z-[9999] transform -translate-x-1/2 -translate-y-1/2">
-      <div className="bg-[#4c4d4c] p-6 rounded-xl shadow-2xl w-full max-w-md relative text-gray-200">
+      <div className="bg-[#4c4d4c] p-6 rounded-xl shadow-2xl w-[90vw] max-w-md text-gray-200 relative">
         <button
           className="absolute top-2 right-3 text-2xl font-bold text-gray-300 hover:text-red-500"
           onClick={onClose}

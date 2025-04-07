@@ -77,7 +77,7 @@ const Navbar = ({ onGetStartedClick }: { onGetStartedClick: () => void }) => {
             Clients
           </button>
           <button
-            onClick={() => scrollToSection("features")}
+            onClick={() => scrollToSection("about-us")}
             className="block hover:text-red-500 border-b border-gray-600 pb-3 w-full text-left"
           >
             Features
