@@ -42,6 +42,9 @@ const Navbar = ({ onGetStartedClick }: { onGetStartedClick: () => void }) => {
           <button onClick={() => scrollToSection("reviews")} className="hover:text-red-500 transition">
             Reviews
           </button>
+          <button onClick={() => scrollToSection("documents")} className="hover:text-red-500 transition">
+            Policies & Terms
+          </button>
         </div>
 
         {/* Get Started Button (Desktop) */}
@@ -94,6 +97,13 @@ const Navbar = ({ onGetStartedClick }: { onGetStartedClick: () => void }) => {
           >
             Reviews
           </button>
+          <button
+            onClick={() => scrollToSection("documents")}
+            className="block hover:text-red-500 border-b border-gray-600 pb-3 w-full text-left"
+          >
+            Policies & Terms
+          </button>
+
           <button
             onClick={() => {
               onGetStartedClick();

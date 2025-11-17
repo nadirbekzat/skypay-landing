@@ -6,6 +6,7 @@ import AboutUsSection from "../sections/AboutUsSection";
 import ClientSection from "../sections/ClientSection";
 import UseCasesSection from "../sections/UseCasesSection";
 import ReviewSection from "../sections/ReviewSection";
+import DocumentsSection from "../sections/DocumentsSection";
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
@@ -18,6 +19,7 @@ const Home = () => {
       <AboutUsSection />
       <UseCasesSection />
       <ReviewSection />
+      <DocumentsSection />
       {/* Модальное окно будет отрендерено поверх всего, но без затемнения фона */}
       <GetStartedModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
